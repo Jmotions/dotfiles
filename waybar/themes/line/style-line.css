@@ -1,3 +1,4 @@
+
 @import url('../../.cache/wal/colors-waybar.css');
 
 * {
@@ -5,25 +6,6 @@
     font-family: "CodeNewRoman Nerd Font Propo";
 }
 window#waybar{
-    all:unset;
-}
-.modules-left {
-    padding:7px;
-    margin:10 0 5 10;
-    border-radius:10px;
-    background: alpha(@background,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-center {
-    padding:7px;
-    margin:10 0 5 0;
-    border-radius:10px;
-    background: alpha(@background,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-right {
-    padding:7px;
-    margin: 10 10 5 0;
     border-radius:10px;
     background: alpha(@background,.6);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
@@ -32,19 +14,14 @@ tooltip {
     background:@background;
     color: @color7;
 }
-#clock:hover,#custom-power:hover,#custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover,#pulseaudio:hover{
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
     transition: all .3s ease;
     color:@color9;
 }
 #custom-notification {
-    padding: 0px 5px;
+    padding: 0px 5px 0 10;
     transition: all .3s ease;
     color:@color7;
-}
-#custom-power {
-    color: @color7;
-    transition: all .3s ease;
-    padding: 0 5px;
 }
 #clock{
     padding: 0px 5px;
@@ -57,9 +34,8 @@ tooltip {
     color:@color7;
 
 }
-
 #workspaces {
-    padding: 0px 5px;
+    padding: 7px 5px;
 }
 #workspaces button {
     all:unset;
@@ -107,16 +83,11 @@ tooltip {
 
 }
 #battery{
-    padding: 0px 5px;
+    padding: 0px 10px 0 5;
     transition: all .3s ease;
     color:@color7;
 
 
-}
-#pulseaudio {
-    padding: 0px 5px;
-    transition: all .3s ease;
-    color: @color7;
 }
 #battery.charging {
     color: #26A65B;

@@ -1,1 +1,0 @@
-/home/jahmad/.config/wallset-engine/wallpaper_startup.sh
