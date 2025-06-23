@@ -1,0 +1,1 @@
+/home/jahmad/.config/hypr/pywal-hyprland-colors.sh
