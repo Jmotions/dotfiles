@@ -4,7 +4,7 @@
 Minimal and clean Arch Linux rice using Hyprland. 
 
 Featuring wallset-engine (TUI for linux-wallpaperengine) 
-(to use wall-set engine go to https://github.com/Jmotions/wallset-engine and follow the install instructions)
+(to use wallset-engine go to https://github.com/Jmotions/wallset-engine and follow the install instructions)
 
 ---
 
