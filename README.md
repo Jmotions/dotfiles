@@ -13,7 +13,7 @@ Featuring wallset-engine (TUI for linux-wallpaperengine)
 ```bash
 git clone https://github.com/Jmotions/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-
+```
 ##Screenshots
 
 ![Full workflow](screenshots/screenshot-2025-06-23_16-10-30.png)
