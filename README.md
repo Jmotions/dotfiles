@@ -16,7 +16,7 @@ cd ~/dotfiles
 ```
 ---
 
-##Screenshots
+## Screenshots
 
 ![Full workflow](screenshots/screenshot-2025-06-23_16-10-30.png)
 
