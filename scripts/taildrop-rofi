@@ -1,0 +1,33 @@
+#!/bin/bash
+# Taildrop Rofi unified send/receive
+
+CHOICE=$(echo -e "Send Taildrop\nReceive Taildrop" | rofi -dmenu -i -p "Taildrop")
+
+case "$CHOICE" in
+    "Send Taildrop")
+        notify-send "Taildrop" "Select a file to send"
+        current="$HOME"
+        while true; do
+            # List dirs with / and files normally
+            options=$(find "$current" -maxdepth 1 -mindepth 1 -type d -printf "%f/\n"; \
+                      find "$current" -maxdepth 1 -mindepth 1 -type f -printf "%f\n")
+            choice=$(echo "$options" | rofi -dmenu -p "$current")
+            [[ -z "$choice" ]] && exit 0
+            selected="$current/${choice%/}"
+            if [[ -d "$selected" ]]; then
+                current="$selected"
+            else
+                device=$(tailscale status | awk '{print $2}' | tail -n +2 | rofi -dmenu -p "Select device")
+                [[ -n "$device" ]] && tailscale file cp "$selected" "$device:" && notify-send "Taildrop" "Sent $selected to $device"
+                exit 0
+            fi
+        done
+        ;;
+    "Receive Taildrop")
+        DEST="$HOME/Documents/taildrop"
+        [[ -d "$DEST" ]] || DEST="$HOME"
+
+        cd "$DEST" && tailscale file get . && notify-send "Taildrop" "Received files to $DEST"
+        ;;
+esac
+

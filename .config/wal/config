@@ -1,0 +1,5 @@
+{
+  "templates": {
+    "helix.toml": "~/.config/helix/themes/wal.toml"
+  }
+}

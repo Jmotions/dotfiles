@@ -1,0 +1,8 @@
+inherits = "base16_default_dark"
+
+"ui.background" = { bg = "{{background}}" }
+"ui.text" = { fg = "{{foreground}}" }
+"ui.cursor" = { bg = "{{cursor}}" }
+
+"ui.selection" = { bg = "{{color8}}" }
+"ui.cursorline" = { bg = "{{color0}}" }

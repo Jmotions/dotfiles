@@ -1,0 +1,18 @@
+@define-color bg {{background}};
+@define-color fg {{foreground}};
+@define-color accent {{color4}};
+
+* {
+    background-color: @bg;
+    color: @fg;
+}
+
+button {
+    background-color: shade(@accent, 0.9);
+    color: @fg;
+}
+
+entry {
+    background-color: shade(@bg, 1.1);
+    color: @fg;
+}

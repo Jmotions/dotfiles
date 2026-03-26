@@ -1,0 +1,2 @@
+#! /bin/bash
+cclipd -s 2 -t "image/png" -t "image/*" -t "text/plain;charset=utf-8" -t "text/*" -t "*" &

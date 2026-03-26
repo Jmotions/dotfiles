@@ -1,0 +1,10 @@
+/* === Clean lyric font override === */
+.lyrics-lyricsContainer-LyricsLine,
+.lyrics-lyricsContainer-LyricsLine span {
+    font-family: "Noto Sans JP", "Inter", sans-serif !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    background: transparent !important;
+}

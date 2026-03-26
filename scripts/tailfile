@@ -1,0 +1,23 @@
+#!/bin/bash
+# TailDrop interface
+
+echo "Tailscale File Transfer"
+echo "1) Send a file"
+echo "2) Receive files"
+read -p "Choose an option [1/2]: " choice
+
+case $choice in
+    1)
+        read -p "Enter path to file to send: " file
+        read -p "Enter device name (as in 'tailscale status'): " device
+        tailscale file cp "$file" "$device:"
+        ;;
+    2)
+        read -p "Enter directory to receive files into: " dir
+        mkdir -p "$dir"
+        tailscale file get "$dir"
+        ;;
+    *)
+        echo "Invalid choice"
+        ;;
+esac
