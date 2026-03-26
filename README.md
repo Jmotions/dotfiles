@@ -18,12 +18,12 @@ cd ~/dotfiles
 
 ## Screenshots
 
-![Full workflow](screenshots/screenshot-2025-06-23_16-10-30.png)
+![Full workflow](screenshots/screenshot-2026-03-26_17-31-31.png1)
 
-![Wallset-engine](screenshots/screenshot-2025-06-23_16-13-07.png)
+![Wallset-engine](screenshots/screenshot-2026-03-26_17-37-29.png)
 
-![After changing wallpaer](screenshots/screenshot-2025-06-23_16-13-26.png)
+![After changing wallpaer](screenshots/screenshot-2026-03-26_17-30-51.png)
 
-![Another look](screenshots/screenshot-2025-06-23_16-13-46.png)
+![Another look](screenshots/screenshot-2026-03-26_17-29-45.png)
 
-![Rofi](screenshots/screenshot-2025-06-23_16-23-22.png)
+![Vicinae!](screenshots/screenshot-2026-03-26_17-39-18.png)
