@@ -1,0 +1,11 @@
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[user]
+	name = Martyr_0
+	email = mojodude38@gmail.com
+[core]
+	editor = nano
+[checkout]
+	workers = 1
